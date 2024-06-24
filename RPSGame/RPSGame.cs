@@ -53,7 +53,7 @@ namespace RPSGame
             DeclareWinner();
         }
 
-        private string GenerateAIMove()
+        public string GenerateAIMove()
         {
             int choice = Random.Next(1, 4);
             return choice switch
@@ -65,7 +65,7 @@ namespace RPSGame
             };
         }
 
-        private int CompareMoves(string playerMove, string aiMove)
+        public int CompareMoves(string playerMove, string aiMove)
         {
             if (playerMove == aiMove) return 0;
 
@@ -81,7 +81,7 @@ namespace RPSGame
             };
         }
 
-        private void DisplayScores()
+        public void DisplayScores()
         {
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("====================================");
@@ -89,7 +89,7 @@ namespace RPSGame
             Console.WriteLine("====================================");
         }
 
-        private void DeclareWinner()
+        public void DeclareWinner()
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             if (HumanPlayer.Score > Computer.Score)
