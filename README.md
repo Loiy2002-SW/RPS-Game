@@ -1,4 +1,4 @@
-# Rock, Paper, Scissors Game
+﻿# Rock, Paper, Scissors Game 💎📃✂
 
 ## Project Description
 
@@ -39,15 +39,15 @@ This project implements a console-based Rock, Paper, Scissors game where a playe
 ## File Structure
 
 		RPSGame/
-		?
-		??? Program.cs         # Main entry point of the application
-		??? RPSGame.cs         # RPSGame class managing game logic
-		??? Player.cs          # Player class representing a game player
-		??? (other files)      # Additional project files
+		│
+		├── Program.cs         # Main entry point of the application
+		├── RPSGame.cs         # RPSGame class managing game logic
+		├── Player.cs          # Player class representing a game player
+		└── (other files)      # Additional project files
 
 		Tests/
-		?
-		??? RPSGameTests.cs    # Xunit test cases for RPSGame class
+		│
+		└── RPSGameTests.cs    # Xunit test cases for RPSGame class
 
 		README.md              # Project documentation file
 
