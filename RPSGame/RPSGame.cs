@@ -22,8 +22,14 @@ namespace RPSGame
                 string playerMove = HumanPlayer.ChooseMove();
                 string aiMove = GenerateAIMove();
 
+
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.WriteLine("====================================");
                 Console.WriteLine($"{HumanPlayer.Name} chose {playerMove}");
                 Console.WriteLine($"{Computer.Name} chose {aiMove}");
+                Console.WriteLine("====================================\n");
+
+                Console.ForegroundColor = ConsoleColor.Cyan;
 
                 int result = CompareMoves(playerMove, aiMove);
                 if (result == 1)
@@ -77,11 +83,15 @@ namespace RPSGame
 
         private void DisplayScores()
         {
-            Console.WriteLine($"Scores:\n{HumanPlayer.Name}: {HumanPlayer.Score}\n{Computer.Name}: {Computer.Score}\n");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("====================================");
+            Console.WriteLine($"Scores:\n{HumanPlayer.Name}: {HumanPlayer.Score}\n{Computer.Name}: {Computer.Score}");
+            Console.WriteLine("====================================");
         }
 
         private void DeclareWinner()
         {
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             if (HumanPlayer.Score > Computer.Score)
             {
                 Console.WriteLine($"{HumanPlayer.Name} wins the game!");
