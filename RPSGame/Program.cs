@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+            Player p = new Player("Loai");
+
+            Console.WriteLine(p.ChooseMove());
+
         }
     }
 }
